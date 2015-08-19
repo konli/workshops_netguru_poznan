@@ -1,3 +1,7 @@
+User.destroy_all
+Teacher.destroy_all
+SubjectItem.destroy_all
+Student.destroy_all
 puts "Seeds: start"
 TEACHER_TITLES = %w(Dr. Prof. TA)
 User.create!(email: 'admin@admin.com',password: 'adminadmin')
