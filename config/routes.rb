@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get 'report/subjects', to: 'reports#index'
+  root 'visitors#index'
+  get 'report/subjects', to: 'reports#subjects'
   devise_for :users
   resources :students do
     get :subjects
